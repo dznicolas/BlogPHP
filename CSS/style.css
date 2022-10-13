@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: #182634;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*
+ * Blog posts
+ */
+
+.conteudo-artigo {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 30px;
+  background-color: #e5e5e5;
+}
+
+.blog-conteudo {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.btn-custom {
+  padding: 7px;
+  color: #FFF;
+  BACKGROUND-COLOR: #212529;
+  border-radius: 5px;
+  width: max-content;
+}
+
+.btn-custom:hover {
+  color: rgb(187, 187, 187);
+}
+
+.blog-header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif
+    /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+  ;
+  font-size: 2.25rem;
+  text-decoration: none;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 1.5rem 0;
+  width: 100%;
+  margin: 0px auto;
+  color: #fff;
+  text-align: center;
+  background-color: #212529;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
