@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Out-2022 às 02:24
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 8.1.6
+-- Generation Time: Dec 28, 2022 at 04:20 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,24 +18,26 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `blog`
+-- Database: `blog`
 --
+CREATE DATABASE IF NOT EXISTS `blog` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `blog`;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `artigos`
+-- Table structure for table `artigos`
 --
 
 DROP TABLE IF EXISTS `artigos`;
 CREATE TABLE `artigos` (
   `id` int(11) NOT NULL,
-  `titulo` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `conteudo` text COLLATE utf8mb4_unicode_ci NOT NULL
+  `titulo` text NOT NULL,
+  `conteudo` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Extraindo dados da tabela `artigos`
+-- Dumping data for table `artigos`
 --
 
 INSERT INTO `artigos` (`id`, `titulo`, `conteudo`) VALUES
@@ -45,24 +47,24 @@ INSERT INTO `artigos` (`id`, `titulo`, `conteudo`) VALUES
 (4, 'Metaverso', 'Metaverso é uma espécie de nova camada da realidade que integra os mundos real e virtual. Na prática, é um ambiente virtual imersivo construído por meio de diversas tecnologias, como Realidade Virtual, Realidade Aumentada e hologramas.\r\n\r\nPara visualizar o conceito, pense no filme Matrix, dirigido por Lilly e Lana Wachowski. No longa, as pessoas vivem em uma realidade virtual arquitetada por uma inteligência artificial assassina que usa seus corpos para produzir energia. O metaverso é mais ou menos por aí, mas sem as máquinas vilãs – pelo menos por ora.\r\n\r\nNesse universo, que ainda não é real em sua totalidade, as pessoas poderiam interagir umas com as outras, trabalhar, estudar e ter uma vida social por meio de seus avatares (bonecos virtuais customizados) 3D. Ou seja, o objetivo é que pessoas não sejam apenas observadores do virtual, mas façam parte dele.\r\n\r\nEntusiastas veem no metaverso a evolução da internet. Outros enxergam nele um risco para a privacidade, e uma “droga” viciante. A implantação dessa utopia, no entanto, ainda depende do amadurecimento de algumas tecnologias, como o próprio 5G.');
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `artigos`
+-- Indexes for table `artigos`
 --
 ALTER TABLE `artigos`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `artigos`
+-- AUTO_INCREMENT for table `artigos`
 --
 ALTER TABLE `artigos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
